@@ -9,6 +9,7 @@ also postman in order to test your API
 
 ### Quick Start
 
+```bash
 # Install dependencies
 
 npm install
@@ -16,3 +17,4 @@ npm install
 # Start the server
 
 nodemon index.js
+```
