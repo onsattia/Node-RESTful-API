@@ -1,0 +1,17 @@
+{
+  "name": "rest-api-node",
+  "version": "1.0.0",
+  "description": "rest api with express and mongodb ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ons Attia",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.10",
+    "nodemon": "^1.18.9"
+  }
+}
