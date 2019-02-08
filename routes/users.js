@@ -21,17 +21,17 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-  User.findOneAndUpdate({ _id: req.params.id }).then(user => {
-    User.findOne({ _id: req.params.id }).then(user => {
-      res.send(user);
-    });
-  });
+  User.findOneAndUpdate({ _id: req.params.id }, {$set:req.body}, {new: true}).then(user => {
+    res.send(user);
+  })
+  .catch(err => res.send(err));
 });
 
 router.delete("/:id", (req, res) => {
   User.findOneAndDelete({ _id: req.params.id }).then(user => {
     res.send(user);
-  });
+  })
+  .catch(err => res.send(err));
 });
 
 module.exports = router;
